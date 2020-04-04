@@ -46,6 +46,7 @@ public class DaoClass implements DaoInterface {
 			e.setName(emp.getName());
 			e.setSalary(emp.getSalary());
 			return "Updated Employee Info Successfully!";
+			em.merge(e);
 		}
 			
 	}
